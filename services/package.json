@@ -1,0 +1,38 @@
+{
+  "name": "graphql-sequelize-demo-services",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "db:migrate": "sequelize db:migrate",
+    "db:migrate:undo": "sequelize db:migrate:undo",
+    "docker:start": "docker start gsd-db",
+    "docker:stop": "docker stop gsd-db",
+    "watch": "ts-node-dev --respawn index.dev.ts"
+  },
+  "devDependencies": {
+    "@types/bluebird": "~3.5.29",
+    "@types/node": "~12.12.14",
+    "@types/validator": "~12.0.1",
+    "module-alias": "~2.2.2",
+    "ts-node-dev": "~1.0.0-pre.44",
+    "typescript": "~3.7.2"
+  },
+  "dependencies": {
+    "apollo-server": "~2.9.12",
+    "apollo-server-express": "~2.9.12",
+    "body-parser": "~1.19.0",
+    "cors": "~2.8.5",
+    "dotenv": "~8.2.0",
+    "express": "~4.17.1",
+    "mysql2": "~2.0.1",
+    "reflect-metadata": "~0.1.13",
+    "sequelize": "~5.21.2",
+    "sequelize-cli": "~5.5.1",
+    "sequelize-typescript": "~1.0.0"
+  },
+  "_moduleAliases": {
+    "#root": "./src"
+  }
+}
